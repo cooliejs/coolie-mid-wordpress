@@ -7,6 +7,8 @@
 
 'use strict';
 
+var path = require('path');
+
 var pkg = require('./package.json');
 
 var defaults = {};
@@ -16,7 +18,7 @@ var defaults = {};
  * @returns {Function}
  */
 exports.postInit = function () {
-    return function (options) {
+    var mid = function (options) {
         if (options.progress !== 'post-config') {
             return options;
         }
@@ -30,8 +32,10 @@ exports.postInit = function () {
 
         return options;
     };
+
+    mid.package = pkg;
+    return mid;
 };
-exports.postInit.package = pkg;
 
 
 /**
@@ -39,7 +43,7 @@ exports.postInit.package = pkg;
  * @returns {Function}
  */
 exports.preStatic = function () {
-    return function (options) {
+    var mid = function (options) {
         if (options.progress !== 'pre-static') {
             return options;
         }
@@ -47,6 +51,8 @@ exports.preStatic = function () {
         options.path = options.path.replace(/\/wp-content\/themes\/[^/]+\//, '/');
         return options;
     };
+    
+    mid.package = pkg;
+    return mid;
 };
-exports.preStatic.package = pkg;
 

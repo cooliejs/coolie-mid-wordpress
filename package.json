@@ -1,6 +1,6 @@
 {
   "name": "coolie-mid-wordpress",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "coolie-cli middleware",
   "scripts": {},
   "preferGlobal": false,
