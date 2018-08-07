@@ -7,8 +7,6 @@
 
 'use strict';
 
-var object = require('blear.utils.object');
-
 var pkg = require('./package.json');
 
 var defaults = {};

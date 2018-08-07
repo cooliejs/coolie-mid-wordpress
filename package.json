@@ -2,9 +2,7 @@
   "name": "coolie-mid-wordpress",
   "version": "0.2.0",
   "description": "coolie-cli middleware",
-  "scripts": {
-    "test": "node node_modules/mocha/bin/mocha -c --recursive --ui bdd test -t 0"
-  },
+  "scripts": {},
   "preferGlobal": false,
   "bin": {},
   "engines": {
@@ -33,12 +31,8 @@
   "bugs": {
     "url": "https://github.com/cooliejs/coolie-mid-wordpress/issues"
   },
-  "dependencies": {
-    "blear.utils.object": "^1.0.14"
-  },
+  "dependencies": {},
   "peerDependencies": {},
-  "devDependencies": {
-    "mocha": "^2.3.4"
-  },
+  "devDependencies": {},
   "license": "MIT"
 }
