@@ -1,7 +1,7 @@
 {
   "name": "coolie-mid-wordpress",
   "version": "1.0.1",
-  "description": "coolie-cli middleware",
+  "description": "支持适配 wordpress",
   "scripts": {},
   "preferGlobal": false,
   "bin": {},
@@ -20,10 +20,10 @@
   "author": {
     "name": "cloudcome",
     "email": "cloudcome@163.com",
-    "url": "http://ydr.me"
+    "url": "https://ydr.me"
   },
   "contributors": [],
-  "homepage": "https://github.com/cooliejs/coolie-mid-wordpress",
+  "homepage": "https://coolie.ydr.me/middleware/coolie-mid-wordpress/",
   "repository": {
     "type": "git",
     "url": "https://github.com/cooliejs/coolie-mid-wordpress"
