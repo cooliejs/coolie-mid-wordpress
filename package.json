@@ -1,0 +1,44 @@
+{
+  "name": "coolie-mid-wordpress",
+  "version": "0.2.0",
+  "description": "coolie-cli middleware",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha -c --recursive --ui bdd test -t 0"
+  },
+  "preferGlobal": false,
+  "bin": {},
+  "engines": {
+    "node": ">= 0.10.0",
+    "iojs": ">= 1.0.0"
+  },
+  "main": "index.js",
+  "keywords": [
+    "coolie",
+    "coolie-cli",
+    "middleware",
+    "cloudcome",
+    "ydr.me"
+  ],
+  "author": {
+    "name": "cloudcome",
+    "email": "cloudcome@163.com",
+    "url": "http://ydr.me"
+  },
+  "contributors": [],
+  "homepage": "https://github.com/cooliejs/coolie-mid-wordpress",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cooliejs/coolie-mid-wordpress"
+  },
+  "bugs": {
+    "url": "https://github.com/cooliejs/coolie-mid-wordpress/issues"
+  },
+  "dependencies": {
+    "blear.utils.object": "^1.0.14"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  },
+  "license": "MIT"
+}
