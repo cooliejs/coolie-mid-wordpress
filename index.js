@@ -19,8 +19,8 @@ var defaults = {};
  * 后置处理配置
  * @returns {Function}
  */
-exports.postConfig = function () {
-    var mid = function (options) {
+module.exports.postConfig = function () {
+    return function (options) {
         if (options.progress !== 'post-config') {
             return options;
         }
@@ -43,9 +43,6 @@ exports.postConfig = function () {
 
         return options;
     };
-
-    mid.package = pkg;
-    return mid;
 };
 
 
@@ -53,7 +50,7 @@ exports.postConfig = function () {
  * 前置处理静态资源
  * @returns {Function}
  */
-exports.preStatic = function () {
+module.exports.preStatic = function () {
     var mid = function (options) {
         if (options.progress !== 'pre-static') {
             return options;
@@ -67,3 +64,6 @@ exports.preStatic = function () {
     return mid;
 };
 
+
+module.exports.package = pkg;
+module.exports.defaults = defaults;
