@@ -1,6 +1,6 @@
 {
   "name": "coolie-mid-wordpress",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "支持适配 wordpress",
   "scripts": {},
   "preferGlobal": false,
@@ -32,6 +32,7 @@
     "url": "https://github.com/cooliejs/coolie-mid-wordpress/issues"
   },
   "dependencies": {
+    "blear.utils.object": "^1.0.14",
     "blear.utils.string": "^1.0.9"
   },
   "peerDependencies": {},
