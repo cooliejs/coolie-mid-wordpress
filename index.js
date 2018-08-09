@@ -17,7 +17,7 @@ var defaults = {};
  * 后置处理配置
  * @returns {Function}
  */
-exports.postInit = function () {
+exports.postConfig = function () {
     var mid = function (options) {
         if (options.progress !== 'post-config') {
             return options;
