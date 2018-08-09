@@ -31,7 +31,9 @@
   "bugs": {
     "url": "https://github.com/cooliejs/coolie-mid-wordpress/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "blear.utils.string": "^1.0.9"
+  },
   "peerDependencies": {},
   "devDependencies": {},
   "license": "MIT"
